@@ -20,7 +20,7 @@
     <div class="column project-right-section">
       <user-view :manager="data.manager" :bg="data.userNameBg"></user-view>
       <div class="row project-info">
-        <mdicon :width="20" :height="20" name="clipboard-list-outline" />
+        <mdicon v-if="data.numberOfDoc" :width="20" :height="20" name="clipboard-list-outline" />
         <p>{{data.numberOfDoc}}</p>
         <p>Order: <b>{{data.orderNo}}</b></p>
         <mdicon :width="20" :height="20" name="clock-time-four-outline"/>
@@ -76,27 +76,6 @@ export default {
     margin: 5px;
   }
 }
-/* .project-languages {
-  position: relative;
-  display: flex;
-  align-items: center;
-  ul {
-    list-style: none;
-  }
-} */
-/* .dots {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border: 2px solid #bebebe;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  line-height: 27px;
-  background: black;
-  color: #bebebe;
-  text-align: center;
-  font-weight: bold;
-} */
 .project-languages {
   text-align: left;
   margin-top: 0px;
@@ -120,4 +99,9 @@ export default {
        margin: 0px;
   }
 }
+
+
+
+
+
 </style>

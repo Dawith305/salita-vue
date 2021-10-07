@@ -1,57 +1,61 @@
 <template>
-   <div>
-       <svg class="Ellipse_1">
-		    <ellipse id="Ellipse_1" rx="3" ry="3" cx="11" cy="10.5">
-		</ellipse>
-	</svg>
-    <svg class="Ellipse_2">
-		    <ellipse id="Ellipse_2" rx="3" ry="3" cx="11" cy="70">
-		</ellipse>
-	</svg>
-   </div>
+  <div class="">
+    <ol class="">
+      <li class="bullet-item">
+        <h3 class="bullet-title">Step 1</h3>
+      </li>
+      <li class="bullet-item">
+        <h3 class="bullet-title">Step 2</h3>
+      </li>
+    </ol>
+  </div>
 </template>
 
 <script>
 export default {
-    name:"DottedBullet"
-
-}
+  name: "DottedBullet",
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+.bullet-item {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  padding-bottom: 60px;
 
-#Ellipse_1 {
-		fill: rgba(26,3,3,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Ellipse_1 {
-		position: absolute;
-		overflow: visible;
-		width: 11px;
-		height: 10px;
-		/* left: 421px;
-		top: 301px; */
-	}
-	#Ellipse_2 {
-		fill: rgba(26,3,3,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Ellipse_2 {
-		position: absolute;
-		overflow: visible;
-		width: 10px;
-		height: 10px;
-		/* left: 421px;
-		top: 439px; */
-	}
+  &:before {
+    content: "";
+    flex: 0 0 var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background-color: lightgrey;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: calc(var(--circle-size) + var(--spacing));
+      bottom: var(--spacing);
+      z-index: -1;
+      transform: translateX(calc(var(--circle-size) / 3));
+      width: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.bullet-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 0px;
+  margin:0px;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 35px auto 0;
+}
 </style>

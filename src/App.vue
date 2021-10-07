@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --circle-size: 16px;
+  --spacing: 6px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
