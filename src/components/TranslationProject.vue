@@ -32,6 +32,8 @@
 
 <script>
 import UserView from "./UserView.vue";
+
+
 export default {
   props:{
       data: {

@@ -14,6 +14,7 @@
 <script>
 import Tab from './Tab.vue';
 import TraslationProject from "./TranslationProject.vue";
+
 export default {
   name: "TranslationProjects",
   data() {

@@ -1,11 +1,11 @@
 <template>
-  <div class="">
-    <ol class="">
+  <div class="wrapper">
+    <ol>
       <li class="bullet-item">
-        <h3 class="bullet-title">Step 1</h3>
+        <h3 class="bullet-title">Norsk</h3>
       </li>
       <li class="bullet-item">
-        <h3 class="bullet-title">Step 2</h3>
+        <h3 class="bullet-title">Arabsik</h3>
       </li>
     </ol>
   </div>

@@ -25,7 +25,7 @@ export default {
  justify-content: space-between;
  h1 {
    font-weight: bolder;
-   color: rgb(85, 83, 83);
+   color: rgb(54, 53, 53);
  }
 }
 .button{
