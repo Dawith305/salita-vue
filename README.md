@@ -1,4 +1,7 @@
-# salita-test
+# salita-vue
+
+### Demo link
+https://salita-vue.herokuapp.com/
 
 ## Project setup
 ```
