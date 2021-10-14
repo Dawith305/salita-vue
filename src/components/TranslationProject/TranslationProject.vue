@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import UserView from "./UserView.vue";
+import UserView from "../UserView.vue";
 
 
 export default {

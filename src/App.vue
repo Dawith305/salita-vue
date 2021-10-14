@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader.vue";
+import AppHeader from "./components/layouts/AppHeader.vue";
 import MyProjects from "./pages/MyProjects.vue";
 
 export default {
@@ -20,6 +20,7 @@ export default {
 :root {
   --circle-size: 16px;
   --spacing: 6px;
+  --salita-color: #ff5b24;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

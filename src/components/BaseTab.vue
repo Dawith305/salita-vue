@@ -18,8 +18,8 @@ export default {
 }
 .active-tab {
   padding: 10px 40px 20px 0px;
-  color: #ff5b24;
-  border-bottom: 3px solid #ff5b24;
+  color: var(--salita-color);
+  border-bottom: 3px solid var(--salita-color);
 }
 .tab {
   padding: 10px 40px 20px 10px;

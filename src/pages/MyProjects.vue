@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import TranslationProjects from "../components/TranslationProjects.vue";
+import TranslationProjects from "../components/TranslationProject/TranslationProjects.vue";
 export default {
   name: "MyProjects",
   components: { TranslationProjects },
@@ -29,7 +29,7 @@ export default {
  }
 }
 .button{
-  background-color: #ff5b24;
+  background-color: var(--salita-color);
   color: white;
   padding: 5px 10px;
   border-radius: 5px;

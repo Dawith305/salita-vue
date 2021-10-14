@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Tab from './Tab.vue';
+import Tab from '../BaseTab.vue';
 import TraslationProject from "./TranslationProject.vue";
 
 export default {
