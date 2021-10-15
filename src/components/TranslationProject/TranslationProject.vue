@@ -96,7 +96,7 @@ export default {
 }
 .project-info {
   flex-grow: 1;
-  margin-top: 45px;
+  margin-top: 4rem;
   font-size: 15px;
   p {
        padding: 0px 6px;
