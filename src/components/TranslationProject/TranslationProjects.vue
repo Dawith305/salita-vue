@@ -25,7 +25,7 @@ export default {
                   fileName: '[1] 2021-08-12 Sette opp Frilans ENK profile.pdf',
                   from: {
                       language: "Norsk",
-                      code: "nb"
+                      code: "nbdawda"
                   },
                   to: {
                       language: "Arabsik",
@@ -88,7 +88,7 @@ export default {
   },
   components: {
     Tab,
-    TraslationProject,
+    TraslationProject
   }
    
 };
@@ -97,7 +97,6 @@ export default {
 <style lang="scss" scoped>
 .projects-container{
     border-radius: 10px;
-    background-color: white;
     padding: 15px 40px;
     box-shadow: 0 0 13px 0 rgb(0 0 0 / 10%);
 }

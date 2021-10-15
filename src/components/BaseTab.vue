@@ -11,7 +11,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .tab-container {
   border-bottom: 1px solid rgb(204, 202, 202);
   margin-bottom: 10px;

@@ -18,8 +18,8 @@ export default {
 
 <style lang="scss">
 :root {
-  --circle-size: 16px;
-  --spacing: 6px;
+  --circle-size: 0.5rem;
+  --spacing: 0.3rem;
   --salita-color: #ff5b24;
 }
 #app {

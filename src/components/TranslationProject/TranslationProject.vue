@@ -9,12 +9,13 @@
 
       <div class="row project-translation-requested">
         <font-awesome-icon class="globeIcon" icon="globe" />
-        <div class="project-languages">
+        <dotted-bullet :from="data.from" :to="data.to"/>
+        <!-- <div class="project-languages">
           <ul>
             <li><b>{{data.from?.language}}</b> {{data.from?.code}}</li>
             <li><b>{{data.to?.language}}</b> {{data.to?.code}}</li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="column project-right-section">
@@ -31,6 +32,7 @@
 </template>
 
 <script>
+import DottedBullet from '../DottedBullet.vue';
 import UserView from "../UserView.vue";
 
 
@@ -40,7 +42,7 @@ export default {
           type: Object
       }
   },
-  components: { UserView },
+  components: { UserView, DottedBullet },
   name: "TranslationProject",
   computed: {
     cardStyle() {
