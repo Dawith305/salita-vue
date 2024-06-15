@@ -1,5 +1,7 @@
 # salita-vue
 
+Dashboard design implementation for [Skiwo Salita](https://www.salita.no/en)
+
 ### Demo link
 https://main--salita-vue.netlify.app/
 
