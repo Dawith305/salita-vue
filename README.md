@@ -1,7 +1,7 @@
 # salita-vue
 
 ### Demo link
-https://salita-vue.herokuapp.com/
+https://main--salita-vue.netlify.app/
 
 ## Project setup
 ```
